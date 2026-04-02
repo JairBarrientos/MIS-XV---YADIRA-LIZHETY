@@ -5,33 +5,6 @@
 
 
 /* ════════════════════════════════════════
-   ESTRELLAS — se generan automáticamente
-   ✏️ Cambia el 35 para más o menos estrellas
-   (no tocar el resto)
-════════════════════════════════════════ */
-document.addEventListener('DOMContentLoaded', () => {
-
-  const starsEl = document.getElementById('stars');
-  if (starsEl) {
-    const cantidad = 60; /* ✏️ número de estrellas */
-    for (let i = 0; i < cantidad; i++) {
-      const s = document.createElement('div');
-      s.className = 'star';
-      s.style.cssText = `
-        left:               ${Math.random() * 100}%;
-        top:                ${Math.random() * 100}%;
-        width:              ${2 + Math.random() * 3}px;
-        height:             ${2 + Math.random() * 3}px;
-        animation-duration: ${2 + Math.random() * 3}s;
-        animation-delay:    ${Math.random() * 5}s;
-      `;
-      starsEl.appendChild(s);
-    }
-  }
-
-});
-
-/* ════════════════════════════════════════
    SPLASH DE ESTRELLITAS al click del sobre
 ════════════════════════════════════════ */
 function irAInvitacion() {
